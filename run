@@ -1,0 +1,7 @@
+
+javac -cp acm.jar -d ./ src/CountdownGui.java src/CountdownApp.java
+
+jar cvf0m CountdownApp.jar src/manifest.txt CountdownGui.class CountdownApp.class
+
+java -jar CountdownApp.jar
+
