@@ -1,4 +1,1 @@
-Countdown
-=========
-
-Java countdown clock and console
+README.txt
