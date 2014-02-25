@@ -18,7 +18,7 @@ public class CountdownApp extends Program {
 	// PARAMETERS YOU CAN CHANGE
 	
 	// Console font
-    private String CONSOLE_FONT = "Times-20";
+    private String CONSOLE_FONT = "SquareFont-20";
 //--------------------------------------------------------------	
 	
 	@SuppressWarnings("unused")
@@ -53,7 +53,7 @@ public class CountdownApp extends Program {
 		
     	while(true)
     	{
-			cmdString = console.readLine("Enter Command: ");
+			cmdString = console.readLine("Enter Command:   ");
 
             // Check if we need to reset
             int rnTemp = resetNum.get();
@@ -77,6 +77,8 @@ public class CountdownApp extends Program {
 				sharedNum.incrementAndGet();
 			else
 				sharedNum.decrementAndGet();
+
+
     	}
 	}
 }

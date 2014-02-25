@@ -19,13 +19,13 @@ public class CountdownGui extends GCanvas implements Runnable, MouseListener{
 	private String ERROR_TEXT1   = "Error -";
 	private String ERROR_TEXT2   = "Jump Decelerator";
 	private String ERROR_TEXT3   = "Control System Failure";
-	private int ERROR_FONT_SIZE  = 60;
-	private String ERROR_FONT    = "Arial-" + ERROR_FONT_SIZE;
+	private int ERROR_FONT_SIZE  = 75;
+	private String ERROR_FONT    = "SquareFont-" + ERROR_FONT_SIZE;
 	private double FLASH_TIME    = 3;
 
 	// Countdown clock parameters
-	private int CLOCK_FONT_SIZE  = 100;
-	private String CLOCK_FONT    = "Arial-" + CLOCK_FONT_SIZE;
+	private int CLOCK_FONT_SIZE  = 150;
+	private String CLOCK_FONT    = "SquareFont-" + CLOCK_FONT_SIZE;
 	private int startMin         = 9;
 	private int startSec         = 37;
 //---------------------------------------------------------------	
@@ -167,7 +167,6 @@ public class CountdownGui extends GCanvas implements Runnable, MouseListener{
 	{
 		if(reset)
 		{
-            System.out.println("Reset");
 			dt = 0;
 			eTime = 0;
 			pauseTime = 0;
